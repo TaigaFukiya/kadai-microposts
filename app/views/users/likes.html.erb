@@ -1,0 +1,17 @@
+<h2><%= current_user.name %>のお気に入り</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th class=center>ユーザー名</th>
+            <th class="center">投稿内容</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @user.like_microposts.each do |micropost| %>
+            <tr>
+                <td = "right"><%= micropost.user.name %></tb>
+                <td = "right"><%= micropost.content %></tb>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
