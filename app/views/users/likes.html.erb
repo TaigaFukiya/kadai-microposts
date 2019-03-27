@@ -11,6 +11,7 @@
             <tr>
                 <td = "right"><%= micropost.user.name %></tb>
                 <td = "right"><%= micropost.content %></tb>
+                <%= render "likes/like_button", micropost: micropost%>
             </tr>
         <% end %>
     </tbody>
